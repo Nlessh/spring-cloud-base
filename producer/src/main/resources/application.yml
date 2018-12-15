@@ -1,0 +1,13 @@
+server:
+  port: 8501
+spring:
+  application:
+    name: consul-producer
+  cloud:
+    consul:
+      discovery:
+        serviceName: consul-producer
+        register: true
+      #      host: http://10.10.0.248
+      host: http://127.0.0.1
+      port: 8500
