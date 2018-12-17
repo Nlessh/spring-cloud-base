@@ -31,7 +31,12 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 
 | 模块 | 简介 | 
 | ---- |:----|
+| bestpractices | 最佳实践（脚手架）项目 | 
 | consumer | 消费者 | 
+| gateway | 网关 | 
+| log | 统一日志 | 
+| monitor | 监控 | 
+| oauth | 认证、授权 | 
 | producer | 生产者 | 
 | sql | sql文件目录 | 
 | uaa | 认证授权 | 
