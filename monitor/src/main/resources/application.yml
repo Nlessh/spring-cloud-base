@@ -23,9 +23,9 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-#turbine:
-#  appConfig: consumer
-#  aggregator:
-#  clusterConfig: default
-#  clusterNameExpression: new String("default")
-#  instanceUrlSuffix: /hystrix.stream
+turbine:
+  appConfig: producer,consumer
+  aggregator:
+  clusterConfig: default
+  clusterNameExpression: new String("default")
+  instanceUrlSuffix: /hystrix.stream

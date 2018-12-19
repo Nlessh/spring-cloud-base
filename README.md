@@ -50,7 +50,7 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 | common |  | 
 | consumer | 8502 | 
 | gateway |  | 
-| log |  | 
+| log | 8602 | 
 | monitor | 8601 | 
 | oauth |  | 
 | producer | 8501 | 
@@ -66,8 +66,16 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 - 【输入】 http://localhost:8502/hystrix.stream 
 - 【点击】Monitor Stream按钮
 - 【刷新】Consumer 调用。
+
 ## Monitor
 ### Turbine
 
+- 【打开】[http://localhost:8601/hystrix](http://localhost:8601/hystrix)
+- 【输入】 http://localhost:8601/turbine.stream
+- 【点击】Monitor Stream按钮
+- 【刷新】Consumer 调用。
+
+## ZipKin
+[http://localhost:8602/zipkin/](http://localhost:8602/zipkin/)
 
 

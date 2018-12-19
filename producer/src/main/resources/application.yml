@@ -13,6 +13,12 @@ spring:
       #      host: http://10.10.0.248
       host: http://127.0.0.1
       port: 8500
+##### Zipkin 配置
+  zipkin:
+    base-url: http://localhost:8602
+  sleuth:
+    sampler:
+      percentage: 1.0
 ##### actuator配置
 management:
   endpoints:
