@@ -1,22 +1,18 @@
 ##### 基本配置
 server:
-  port: 8502
+  port: 8601
 spring:
   application:
-    name: consumer
-##### Consul配置
+    name: monitor
+  ##### Consul配置
   cloud:
     consul:
       discovery:
-        serviceName: consumer
+        serviceName: monitor
         register: true
       #      host: http://10.10.0.248
       host: http://127.0.0.1
       port: 8500
-##### feign配置
-feign:
-  hystrix:
-    enabled: true
 ##### actuator配置
 management:
   endpoints:
@@ -27,3 +23,9 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+#turbine:
+#  appConfig: consumer
+#  aggregator:
+#  clusterConfig: default
+#  clusterNameExpression: new String("default")
+#  instanceUrlSuffix: /hystrix.stream

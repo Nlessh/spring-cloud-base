@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProducerApplication {
 
-    @RequestMapping("/hello")
-    public String hello() {
-        return "helle,this is producer";
+    @RequestMapping("/")
+    public String start() {
+        return "hello,兵兵,this is producer";
     }
 
     public static void main(String[] args) {

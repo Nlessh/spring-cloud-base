@@ -19,9 +19,14 @@
     </parent>
 
     <modules>
-        <module>producer</module>
+        <module>bestpractices</module>
+        <module>common</module>
         <module>consumer</module>
-        <module>uaa</module>
+        <module>gateway</module>
+        <module>log</module>
+        <module>monitor</module>
+        <module>oauth</module>
+        <module>producer</module>
     </modules>
 
     <properties>
@@ -95,6 +100,7 @@
             <scope>test</scope>
         </dependency>
 
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -104,29 +110,32 @@
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
             <version>2.0.1.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+
         <!--Sleuth、Turbine 客户端-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-netflix-hystrix-stream</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-stream-rabbit</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
 </project>

@@ -4,16 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wanglibing</groupId>
-	<artifactId>bestpractices</artifactId>
+	<artifactId>common</artifactId>
 	<version>1.0</version>
 
-	<name>bestpractices</name>
-	<description>最佳实践（脚手架）</description>
+	<name>common</name>
+	<description>公共服务模块</description>
 
 	<parent>
-		<groupId>com.wanglibing</groupId>
-		<artifactId>spring-cloud-base</artifactId>
-		<version>1.0</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -48,19 +49,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<!--fork :  如果没有该项配置devtools不会起作用，即应用不会restart -->
-					<fork>true</fork>
-					<!--支持静态文件热部署-->
-					<addResources>true</addResources>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>

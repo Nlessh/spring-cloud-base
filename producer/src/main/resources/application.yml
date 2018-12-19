@@ -1,13 +1,25 @@
+##### 基本配置
 server:
   port: 8501
 spring:
   application:
-    name: consul-producer
+    name: producer
+##### Consul配置
   cloud:
     consul:
       discovery:
-        serviceName: consul-producer
+        serviceName: producer
         register: true
       #      host: http://10.10.0.248
       host: http://127.0.0.1
       port: 8500
+##### actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env
+  endpoint:
+    health:
+      show-details: ALWAYS

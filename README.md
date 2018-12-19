@@ -27,11 +27,12 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 | Swagger | API接口文档组件 | 
 | RabbitMQ | 消息服务器，用于发送日志消息，可以用ELK替代 | 
 
-## 模块介绍
+## 目录介绍
 
-| 模块 | 简介 | 
+| 目录 | 简介 | 
 | ---- |:----|
 | bestpractices | 最佳实践（脚手架）项目 | 
+| common | 公共基础模块 | 
 | consumer | 消费者 | 
 | gateway | 网关 | 
 | log | 统一日志 | 
@@ -39,6 +40,25 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 | oauth | 认证、授权 | 
 | producer | 生产者 | 
 | sql | sql文件目录 | 
-| uaa | 认证授权 | 
+| oauth | 认证授权 | 
+
+## 端口介绍
+
+| 子系统 | 端口 | 
+| ---- |:----|
+| bestpractices |  | 
+| common |  | 
+| consumer | 8502 | 
+| gateway |  | 
+| log |  | 
+| monitor | 8601 | 
+| oauth |  | 
+| producer | 8501 | 
+
+# 示例
+## Feign
+http://localhost:8502/hello/kevin
+## 单点Hystrix Dashboard
+http://localhost:8502/hystrix
 
 
