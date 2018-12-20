@@ -58,7 +58,10 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 # 示例
 ## 服务注册中心
 [http://localhost:8500/](http://localhost:8500/)
-## Feign
+## 生产者
+[http://localhost:8501](http://localhost:8501)
+## 消费者
+[http://localhost:8502](http://localhost:8502)
 [http://localhost:8502/hello/kevin](http://localhost:8502/hello/kevin)
 ## 单点Hystrix Dashboard
 
@@ -68,14 +71,14 @@ spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
 - 【刷新】Consumer 调用。
 
 ## Monitor
-### Turbine
+### 熔断聚合监控
 
 - 【打开】[http://localhost:8601/hystrix](http://localhost:8601/hystrix)
 - 【输入】 http://localhost:8601/turbine.stream
 - 【点击】Monitor Stream按钮
 - 【刷新】Consumer 调用。
 
-## ZipKin
+## 链路追踪
 [http://localhost:8602/zipkin/](http://localhost:8602/zipkin/)
 
 

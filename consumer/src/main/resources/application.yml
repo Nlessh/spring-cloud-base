@@ -33,3 +33,8 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+##### 日志配置
+logging:
+  level:
+    #    org.springframework.cloud.netflix.feign: debug
+    org.springframework.cloud.openfeign: debug
